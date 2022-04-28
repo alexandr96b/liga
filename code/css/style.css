@@ -781,6 +781,7 @@ select{
 	position: relative;
 	width: 100%;
 	height: 100%;
+	display: block;
 }
 .btn-wrap__arrows{
 	position: absolute;
@@ -791,6 +792,7 @@ select{
 	animation: 1.5s linear 0s normal none infinite running rot5;
 	-webkit-animation: 1.5s linear 0s normal none infinite running rot5;
 	z-index: 95;
+	display: block;
 }
 .btn-wrap__arrows:before{
 	position: absolute;
