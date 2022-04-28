@@ -362,6 +362,12 @@ $('.nav-list a[href*="#"]').click(function() {
 });
 
 
+    $(".various").fancybox({
+        type: "iframe",
+        // other API options
+    })
+
+
 
     function moveMenu(){
         if ($(window).width() < 767) {
