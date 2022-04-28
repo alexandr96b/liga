@@ -573,6 +573,12 @@
     .b-slider__btn{
         display: none;
     }
+    .b-video iframe{
+        object-fit: contain;
+    }
+    .b-slider .swiper-slide iframe{
+        object-fit: contain;
+    }
 }
 @media (max-width: 660px) {
 
