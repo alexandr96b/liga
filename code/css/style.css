@@ -150,24 +150,9 @@ button:hover , button:focus , button:active{
 	color: #FFFFFF;
 	transition: 0.3s;
 }
-.disable{
-	color: #CCCCCC !important;
-	border-color: #E6E6E6 !important;
-	pointer-events: none;
-}
-.disable i{
-	color: #CCCCCC !important;
-}
-.disable:hover , .disable:active , .disable:focus{
-	color: #CCCCCC;
-	border-color: #E6E6E6;	
-}
-.disable:hover i, .disable:active i, .disable:focus i{
-	color: #CCCCCC;
-}
 .swiper-button-disabled{
-	color: #CCCCCC !important;
-	border-color: #E6E6E6 !important;
+	color: gray !important;
+	border-color: gray !important;
 	pointer-events: none;	
 }
 /* ripple-effect */
@@ -1659,5 +1644,5 @@ iframe{
 	display: none;
 }
 .fancybox-slide>div{
-	background: transparent !important;
+	background: rgba(26, 26, 26, 0.71) !important;
 }

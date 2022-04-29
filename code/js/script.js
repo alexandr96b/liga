@@ -122,8 +122,9 @@ var swiper = new Swiper( '.b-slider', {
     },
     paginationClickable: true,
     effect: 'coverflow',
-    loop: true,
+    loop: false,
     speed: 1000,
+    initialSlide: 1,
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflow: {
