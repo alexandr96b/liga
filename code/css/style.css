@@ -1138,7 +1138,6 @@ select{
 }
 .b-slider .swiper-slide{
 	width: 885px;
-	min-height: 441px;
 	position: relative;
 }
 .b-slider__overlay{
@@ -1173,6 +1172,7 @@ select{
 .b-slider .swiper-slide video{
 	max-height: 441px;
 	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 .b-slider .swiper-slide-active video{
@@ -1593,4 +1593,71 @@ select{
 }
 iframe{
 	border: none;
+}
+
+
+.loaderArea {
+	background: #0B0B0B;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right:0;
+	bottom:0;
+	z-index: 100000;
+}
+.loader {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	top: 50%;
+	margin-top: -20px;
+}
+
+.loader:before,
+.loader:after {
+	content: "";
+	height: 40px;
+	width: 40px;
+	border: 8px solid #AC004D;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+}
+
+.loader:before {
+	animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(0) skew(0);
+	}
+
+	100% {
+		transform: rotate(180deg) skew(360deg);
+	}
+}
+
+
+.loader:after {
+	animation: animate2 2s infinite linear;
+}
+
+@keyframes animate2 {
+	0% {
+		transform: rotate(0) skew(0);
+	}
+
+	100% {
+		transform: rotate(-180deg) skew(-360deg);
+	}
+}
+.fancybox-video {
+	display: none;
+}
+.fancybox-slide>div{
+	background: transparent !important;
 }

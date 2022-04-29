@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+$(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+
+});
+
 // === Begin button ripple style === \\\
 $(".ripple").on("click", function(event) {
    var _this = $(this),
@@ -70,16 +78,7 @@ $(".b-modal__static-close").on("click", function() {
 });
 // === End modal === \\\
 
-$('.btn-1').click(function(){
-    $(this).parent().fadeOut();
-});
 
-$('.playpause2').click(function(){
-    $(this).parent().fadeOut();
-});
-
-
-/*
 $('.video').parent().click(function () {
     if($(this).children(".video").get(0).paused){
         $(this).children(".video").get(0).play();
@@ -109,7 +108,7 @@ $('.video2').parent().click(function () {
 
     }
 });
-*/
+
 
 
 var swiper = new Swiper( '.b-slider', {
@@ -361,12 +360,19 @@ $('.nav-list a[href*="#"]').click(function() {
     return false;
 });
 
+    // Fancybox Single Videos
+    $(".fancybox-single").fancybox({
 
-    $(".various").fancybox({
-        type: "iframe",
-        // other API options
-    })
+        afterShow: function() {
+            // After the show-slide-animation has ended - play the video
+            this.content.find('video').trigger('play')
+            // Trigger fancybox.close() once the video has ended
+            this.content.find('video').on('ended', function() {
+                $.fancybox.close();
+            });
+        }
 
+    });
 
 
     function moveMenu(){

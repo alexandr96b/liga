@@ -579,6 +579,9 @@
     .b-slider .swiper-slide iframe{
         object-fit: contain;
     }
+    .b-slider .swiper-slide{
+        min-height: inherit;
+    }
 }
 @media (max-width: 660px) {
 
