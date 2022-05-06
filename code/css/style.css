@@ -747,6 +747,15 @@ select{
 	top: 180px;
 	left: -567px;
 }
+.b-main__img{
+	position: absolute;
+	top: 180px;
+	left: 0px;
+}
+.b-main__img svg{
+	width: 100%;
+	height: 100%;
+}
 .b-main__img img{
 	animation: 4s linear 0s normal none infinite running rot3;
 	-webkit-animation: 4s linear 0s normal none infinite running rot3;
@@ -1645,4 +1654,21 @@ iframe{
 }
 .fancybox-slide>div{
 	background: rgba(26, 26, 26, 0.71) !important;
+}
+
+
+.b-dot{
+	opacity: 0;
+	visibility: hidden;
+	transition: 1s;
+	transform: scale(1);
+	transform-box: fill-box;
+}
+
+.b-dot.active{
+	transform: scale(1.2);
+	transform-box: fill-box;
+	opacity: 1;
+	visibility: visible;
+	transition:1s;
 }

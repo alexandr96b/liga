@@ -6,6 +6,9 @@
         top: 186px;
         left: -478px;
     }
+    .b-main__img{
+        left: 0;
+    }
     .b-main__background{
         display: flex;
         justify-content: flex-end;
@@ -24,6 +27,9 @@
     .b-main__img{
         top: 186px;
         left: -430px;
+    }
+    .b-main__img{
+        left: 0;
     }
     .b-main__background{
         bottom: -20px;
@@ -58,6 +64,9 @@
     }
     .b-main__img{
         left: -407px;
+    }
+    .b-main__img{
+        left: 0;
     }
     .b-main__btn{
         margin-right: 85px;
@@ -158,6 +167,9 @@
     }
     .b-main__img {
         left: -230px;
+    }
+    .b-main__img{
+        left: 0;
     }
     .b-main__img img{
         max-width: 55%;
@@ -424,8 +436,14 @@
         left: -275px;
         top: 100px;
     }
+    .b-main__img{
+        left: 0;
+    }
     .b-main__img img{
         max-width: 80%;
+    }
+    .b-main__img svg{
+        max-width: 100%;
     }
     .b-main__logo{
         margin: 15px auto 0;

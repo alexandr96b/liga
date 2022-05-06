@@ -136,6 +136,25 @@ var swiper = new Swiper( '.b-slider', {
     }
 } );
 
+
+    window.onload = function ()
+    {
+        var imgs = document.querySelectorAll('.b-dot'),
+            len = imgs.length,
+            i = len - 1;
+
+        (function go()
+        {
+            imgs[i].classList.remove('active');
+            i++;
+            if ( i == len) i = 0;
+            imgs[i].classList.add('active');
+            window.setTimeout(go, 900);
+
+        })()
+    }
+
+
 // google maps
 
 // When the window has finished loading create our google map below
