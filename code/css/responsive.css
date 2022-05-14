@@ -1,3 +1,6 @@
+@media (max-width: 1900px) {
+
+}
 @media (max-width: 1749px) {
     .b-main__img img{
         max-width: 80%;
@@ -16,6 +19,7 @@
     .b-main__background img{
         max-width: 95%;
     }
+
 }
 @media (max-width: 1599px) {
     .b-main{
@@ -51,6 +55,9 @@
     .b-nav > ul > li {
         margin-bottom: 55px;
     }
+    .b-main__img svg{
+        max-width: 70%;
+    }
 }
 @media (max-width: 1439px) {
     .container_2{
@@ -77,6 +84,7 @@
     .b-social__title{
         margin: 0 0 30px 0;
     }
+
 }
 @media (max-width: 1304px) {
    .container_2{
@@ -151,10 +159,19 @@
     .b-footer{
         padding: 150px 0 50px 0;
     }
+    .b-main__img svg{
+        max-width: 70%;
+    }
 }
 @media (max-width: 1300px) {
     .b-main__btn{
         margin-right: 95px;
+    }
+    .b-main__img{
+        top: 34%;
+    }
+    .b-main__img svg{
+        max-width: 60%;
     }
 }
 @media (max-width: 1199px) {
@@ -280,6 +297,10 @@
         background: rgb(0 0 0 / 89%);
         backdrop-filter: blur(0px);
     }
+    .b-main__img svg{
+        max-width: 50%;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -375,6 +396,7 @@
         width: 60%;
     }
 
+
 }
 @media (max-width: 767px) {
     .b-header{
@@ -433,8 +455,8 @@
         display: none;
     }
     .b-main__img {
-        left: -275px;
-        top: 100px;
+        top: 46%;
+        transform: translateY(-59%);
     }
     .b-main__img{
         left: 0;
@@ -443,7 +465,9 @@
         max-width: 80%;
     }
     .b-main__img svg{
-        max-width: 100%;
+        /*max-width: 85%;*/
+        max-width: 450px;
+    }
     }
     .b-main__logo{
         margin: 15px auto 0;
@@ -615,7 +639,9 @@
 
 }
 @media (max-width: 500px) {
-
+    .b-main__img svg{
+        max-width: 290px;
+    }
 }
 @media (max-width: 460px) {
 
@@ -624,11 +650,17 @@
 
 }
 @media (max-width: 374px) {
-    .b-main__img img {
+    .b-main__img{
+        top: 48%;
+    }
+    .b-main__img svg {
         max-width: 75%;
     }
-    .b-main__img {
-        left: -195px;
-        top: 146px;
+    .b-main__btn{
+        width: 100px;
+        height: 100px;
+    }
+    .b-main__btn i {
+        font-size: 60px;
     }
 }
