@@ -877,6 +877,7 @@ select{
 	margin: -31px 256px 0 0;
 	position: relative;
 	z-index: 59;
+	right: -160px;
 }
 .b-main__background{
 	position: absolute;

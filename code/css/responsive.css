@@ -1,6 +1,11 @@
 @media (max-width: 1900px) {
 
 }
+@media (max-width: 1790px) {
+    .b-main__img svg{
+        max-width: 85%;
+    }
+}
 @media (max-width: 1749px) {
     .b-main__img img{
         max-width: 80%;
@@ -19,7 +24,6 @@
     .b-main__background img{
         max-width: 95%;
     }
-
 }
 @media (max-width: 1599px) {
     .b-main{
@@ -55,9 +59,9 @@
     .b-nav > ul > li {
         margin-bottom: 55px;
     }
-/*    .b-main__img svg{
+    .b-main__img svg{
         max-width: 70%;
-    }*/
+    }
 }
 @media (max-width: 1439px) {
     .container_2{
@@ -298,7 +302,8 @@
     .b-main__img svg{
         max-width: 50%;
     }
-
+    .b-main__logo{
+        right: 0;
 }
 
 @media (max-width: 991px) {
