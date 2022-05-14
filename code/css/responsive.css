@@ -55,9 +55,9 @@
     .b-nav > ul > li {
         margin-bottom: 55px;
     }
-    .b-main__img svg{
+/*    .b-main__img svg{
         max-width: 70%;
-    }
+    }*/
 }
 @media (max-width: 1439px) {
     .container_2{
@@ -170,9 +170,7 @@
     .b-main__img{
         top: 34%;
     }
-    .b-main__img svg{
-        max-width: 60%;
-    }
+
 }
 @media (max-width: 1199px) {
     .container_2{
@@ -459,7 +457,7 @@
         transform: translateY(-59%);
     }
     .b-main__img{
-        left: 0;
+        left: -39px;
     }
     .b-main__img img{
         max-width: 80%;
@@ -640,7 +638,7 @@
 }
 @media (max-width: 500px) {
     .b-main__img svg{
-        max-width: 290px;
+        max-width: 332px;
     }
 }
 @media (max-width: 460px) {
